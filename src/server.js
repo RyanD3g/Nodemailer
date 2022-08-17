@@ -12,6 +12,4 @@ app.use(routes);
 
 dotenv.config();
 
-app.listen(port, ()=>{
-    console.log(path.resolve(__dirname, 'views'));
-})
+app.listen(port)
