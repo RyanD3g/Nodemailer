@@ -17,5 +17,5 @@ exports.sendmailer = async (req, res)=>{
         subject:'Heeeey! Temos uma nova mensagem!',
         text: req.body.message
     });
-    res.sendFile('/home/ryan/Documentos/Nodemailer/src/views/sendSucess.html');
+    res.sendFile(path.resolve(__dirname, '..', 'views', 'sendSucess.html'));
 };
